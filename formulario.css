@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo {
+    font-family: Verdana;
+    color: blue;
+    margin-left: 2%;
+}
+
+#subtitulo {
+    font-family: Verdana;
+    color: blue;
+    margin-left: 12%;
+}
+
+#check {
+    display: inline-block;
+}
+
+.grupo input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+fieldset {
+    border: 0;
+}
+
+body {
+    background-color: #F0F8FF;
+    font-family: Verdana;
+    font-size: 1em;
+    color: black;
+    margin-left: 35%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+input, select, textarea, button{
+    font-family: verdana;
+    font-size:  1em;
+    color: black;
+    border-radius: 10px;
+}
+
+.grupo::before, .grupo::after {
+    display: table;
+}
+.grupo::after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.5em;
+    color: black;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 5em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="date"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 2px solid red;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: rgb(0,191,255);
+}
+
+.botao {
+    font-size: 1.2em;
+    background: red;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: #5033f7da;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao select {
+    cursor: pointer;
+}
